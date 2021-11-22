@@ -71,3 +71,14 @@ CelebA, biased_black_hair_model_92.pth, 0.66, 92, black_hair_fc_92.json
 
 To view results from the COCO setting (Experiment 3), use the following values:
 COCO, coco.pth, 0.66, 58, bed_fc_58.json
+
+## Citation
+Please consider citing this paper if you find this project useful in your research.
+```
+@inproceedings{2021BMVC_UDIS, 
+  author = {Krishnakumar, Arvindkumar and Prabhu, Viraj and Sudhakar, Sruthi and Hoffman, Judy},
+  title = {UDIS: Unsupervised Discovery of Bias in Deep Visual Recognition Models},
+  year = 2021,
+  booktitle = {British Machine Vision Conference (BMVC)}
+}
+```
