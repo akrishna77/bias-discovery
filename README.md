@@ -29,6 +29,8 @@ wget https://drive.google.com/file/d/0B7EVK8r0v71pZjFTYXZWM3FlRnM/view?usp=shari
 wget https://drive.google.com/file/d/0B7EVK8r0v71pblRyaVFSWGxPY0U/view?usp=sharing&resourcekey=0-YW2qIuRcWHy_1C2VaRGL3Q
 ```
 
+Download the [COCO](https://cocodataset.org/#download) dataset and update `COCO_ROOT` in `experiments/coco/cluster_utils.py`.
+
 ## Discover <a name="discover"></a>
 
 Run the following command after changing parameters as required:
