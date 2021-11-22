@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <title>UDIS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+        <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+        {% block style %}{% endblock %}
+        {% block script %}{% endblock %}
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid" id='navbar-container-fluid'>
+              <div class="navbar-header">
+                <a class="navbar-brand" href="./">UDIS</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="btn"><a href="/upload_model">Model Upload</a></li>
+                <li class="btn"><a href="/upload_json">JSON Upload</a></li>
+                <li class="btn"><a href="/get_details">View Clusters</a></li>
+              </ul>
+            </div>
+        </nav>
+
+        {% block content %}{% endblock %}
+
+    </body>
+
+</html>

@@ -1,0 +1,959 @@
+Attribute : person
+car : 8519
+chair : 8034
+handbag : 6221
+dining table : 5868
+backpack : 5033
+cup : 4848
+bottle : 4561
+bench : 4108
+sports ball : 4097
+truck : 3992
+
+Attribute : bicycle
+person : 2641
+car : 1235
+handbag : 651
+backpack : 635
+traffic light : 459
+motorcycle : 452
+truck : 448
+bus : 431
+bench : 337
+umbrella : 310
+
+Attribute : car
+person : 8519
+truck : 3664
+traffic light : 2534
+bus : 2125
+handbag : 1513
+motorcycle : 1377
+bicycle : 1235
+backpack : 1033
+bench : 815
+umbrella : 777
+
+Attribute : motorcycle
+person : 2786
+car : 1377
+truck : 631
+bicycle : 452
+handbag : 447
+backpack : 334
+traffic light : 322
+bus : 293
+umbrella : 192
+chair : 164
+
+Attribute : airplane
+person : 1026
+truck : 644
+car : 357
+handbag : 95
+boat : 78
+suitcase : 77
+bus : 72
+backpack : 69
+chair : 45
+tie : 42
+
+Attribute : bus
+person : 3010
+car : 2125
+truck : 917
+traffic light : 857
+handbag : 675
+backpack : 478
+bicycle : 431
+motorcycle : 293
+bench : 217
+umbrella : 172
+
+Attribute : train
+person : 1626
+car : 422
+traffic light : 405
+handbag : 345
+backpack : 242
+bench : 234
+truck : 173
+suitcase : 167
+bicycle : 102
+bus : 97
+
+Attribute : truck
+person : 3992
+car : 3664
+traffic light : 1069
+bus : 917
+airplane : 644
+motorcycle : 631
+handbag : 623
+bicycle : 448
+backpack : 431
+stop sign : 296
+
+Attribute : boat
+person : 1986
+car : 262
+umbrella : 260
+bird : 236
+bench : 202
+chair : 184
+surfboard : 175
+dog : 154
+truck : 143
+bicycle : 124
+
+Attribute : traffic light
+car : 2534
+person : 2450
+truck : 1069
+bus : 857
+handbag : 667
+bicycle : 459
+backpack : 450
+train : 405
+motorcycle : 322
+fire hydrant : 250
+
+Attribute : fire hydrant
+car : 763
+person : 693
+truck : 271
+traffic light : 250
+handbag : 134
+stop sign : 119
+bicycle : 104
+backpack : 94
+bus : 84
+bench : 81
+
+Attribute : stop sign
+car : 776
+person : 646
+truck : 296
+traffic light : 168
+bicycle : 125
+bus : 124
+handbag : 121
+fire hydrant : 119
+backpack : 87
+motorcycle : 81
+
+Attribute : parking meter
+car : 474
+person : 327
+truck : 131
+traffic light : 93
+bicycle : 77
+handbag : 75
+fire hydrant : 51
+backpack : 41
+bus : 35
+bench : 32
+
+Attribute : bench
+person : 4108
+car : 815
+handbag : 791
+chair : 688
+backpack : 569
+baseball bat : 431
+sports ball : 429
+dining table : 426
+baseball glove : 378
+umbrella : 367
+
+Attribute : bird
+person : 795
+boat : 236
+bench : 197
+car : 182
+chair : 159
+giraffe : 139
+handbag : 111
+clock : 109
+zebra : 98
+dining table : 92
+
+Attribute : cat
+person : 693
+chair : 580
+bed : 542
+book : 515
+couch : 480
+tv : 402
+laptop : 393
+bottle : 300
+cup : 265
+bowl : 246
+
+Attribute : dog
+person : 2049
+chair : 532
+frisbee : 521
+car : 481
+couch : 466
+bed : 355
+book : 282
+handbag : 261
+bench : 257
+bottle : 227
+
+Attribute : horse
+person : 2008
+car : 383
+truck : 213
+tie : 134
+handbag : 132
+cow : 127
+dog : 109
+chair : 105
+backpack : 92
+traffic light : 82
+
+Attribute : sheep
+person : 368
+dog : 116
+cow : 104
+car : 86
+truck : 83
+horse : 56
+bird : 42
+handbag : 35
+bench : 28
+chair : 27
+
+Attribute : cow
+person : 614
+car : 147
+horse : 127
+sheep : 104
+truck : 102
+motorcycle : 92
+bird : 75
+dog : 69
+bicycle : 55
+boat : 45
+
+Attribute : elephant
+person : 865
+bench : 112
+car : 111
+handbag : 98
+bird : 73
+backpack : 70
+truck : 55
+umbrella : 53
+chair : 49
+motorcycle : 38
+
+Attribute : bear
+person : 80
+bird : 21
+teddy bear : 16
+sports ball : 16
+chair : 15
+carrot : 14
+bench : 12
+book : 9
+car : 8
+backpack : 8
+
+Attribute : zebra
+giraffe : 197
+person : 108
+bird : 98
+car : 48
+cow : 39
+elephant : 35
+truck : 22
+horse : 17
+handbag : 9
+bench : 9
+
+Attribute : giraffe
+person : 438
+zebra : 197
+bird : 139
+handbag : 59
+car : 49
+backpack : 28
+truck : 25
+elephant : 24
+cow : 23
+bench : 20
+
+Attribute : backpack
+person : 5033
+handbag : 1683
+car : 1033
+chair : 698
+suitcase : 694
+skis : 651
+bicycle : 635
+bench : 569
+umbrella : 504
+cell phone : 480
+
+Attribute : umbrella
+person : 3446
+handbag : 1142
+chair : 873
+car : 777
+backpack : 504
+dining table : 400
+bench : 367
+bicycle : 310
+truck : 273
+boat : 260
+
+Attribute : handbag
+person : 6221
+backpack : 1683
+car : 1513
+umbrella : 1142
+chair : 994
+cell phone : 910
+bench : 791
+suitcase : 787
+bus : 675
+traffic light : 667
+
+Attribute : tie
+person : 3631
+chair : 601
+handbag : 426
+dining table : 409
+cup : 351
+car : 298
+cell phone : 269
+bottle : 232
+cake : 217
+wine glass : 206
+
+Attribute : suitcase
+person : 1540
+handbag : 787
+backpack : 694
+car : 314
+chair : 304
+cat : 220
+bed : 204
+book : 191
+train : 167
+truck : 152
+
+Attribute : frisbee
+person : 1821
+dog : 521
+car : 274
+bench : 136
+chair : 132
+backpack : 126
+truck : 88
+handbag : 81
+umbrella : 59
+bottle : 59
+
+Attribute : skis
+person : 3043
+backpack : 651
+snowboard : 457
+car : 74
+bench : 65
+dog : 51
+truck : 31
+chair : 27
+handbag : 26
+boat : 20
+
+Attribute : snowboard
+person : 1622
+skis : 457
+backpack : 187
+car : 40
+bench : 31
+skateboard : 23
+truck : 22
+chair : 17
+handbag : 13
+surfboard : 12
+
+Attribute : sports ball
+person : 4097
+tennis racket : 1822
+baseball glove : 1153
+baseball bat : 939
+chair : 675
+bench : 429
+car : 292
+backpack : 153
+bottle : 118
+umbrella : 101
+
+Attribute : kite
+person : 2098
+car : 261
+surfboard : 165
+backpack : 164
+handbag : 162
+boat : 124
+chair : 102
+truck : 100
+umbrella : 89
+bicycle : 74
+
+Attribute : baseball bat
+person : 2477
+baseball glove : 1665
+sports ball : 939
+bench : 431
+chair : 371
+car : 134
+bottle : 80
+backpack : 66
+cup : 46
+handbag : 36
+
+Attribute : baseball glove
+person : 2602
+baseball bat : 1665
+sports ball : 1153
+bench : 378
+chair : 353
+car : 138
+bottle : 64
+backpack : 53
+cup : 41
+truck : 32
+
+Attribute : skateboard
+person : 3417
+car : 621
+bench : 322
+backpack : 316
+bicycle : 246
+truck : 155
+handbag : 148
+chair : 86
+traffic light : 84
+dog : 79
+
+Attribute : surfboard
+person : 3364
+boat : 175
+kite : 165
+car : 134
+dog : 105
+chair : 86
+umbrella : 83
+backpack : 82
+handbag : 62
+bird : 56
+
+Attribute : tennis racket
+person : 3361
+sports ball : 1822
+chair : 684
+bench : 286
+car : 148
+backpack : 130
+bottle : 105
+handbag : 84
+clock : 83
+tie : 81
+
+Attribute : bottle
+person : 4561
+cup : 2974
+dining table : 2865
+chair : 2381
+bowl : 2185
+sink : 1774
+knife : 1411
+spoon : 1174
+oven : 1128
+wine glass : 1115
+
+Attribute : wine glass
+dining table : 1650
+person : 1647
+cup : 1120
+bottle : 1115
+chair : 1004
+bowl : 754
+knife : 727
+fork : 667
+spoon : 483
+vase : 287
+
+Attribute : cup
+person : 4848
+dining table : 4679
+bottle : 2974
+chair : 2947
+bowl : 2816
+knife : 2014
+fork : 1883
+spoon : 1871
+wine glass : 1120
+sink : 1113
+
+Attribute : fork
+dining table : 2688
+cup : 1883
+knife : 1788
+person : 1769
+bowl : 1344
+spoon : 1145
+chair : 1023
+bottle : 924
+pizza : 755
+cake : 709
+
+Attribute : knife
+dining table : 2736
+person : 2360
+cup : 2014
+fork : 1788
+bowl : 1634
+bottle : 1411
+spoon : 1207
+chair : 1161
+cake : 901
+pizza : 813
+
+Attribute : spoon
+bowl : 2101
+dining table : 2091
+cup : 1871
+person : 1685
+knife : 1207
+bottle : 1174
+fork : 1145
+chair : 951
+oven : 614
+cake : 527
+
+Attribute : bowl
+dining table : 3395
+person : 2895
+cup : 2816
+bottle : 2185
+spoon : 2101
+chair : 1783
+knife : 1634
+fork : 1344
+oven : 1098
+sink : 992
+
+Attribute : banana
+person : 928
+bowl : 517
+apple : 504
+orange : 477
+dining table : 453
+cup : 298
+bottle : 292
+chair : 225
+spoon : 169
+knife : 157
+
+Attribute : apple
+orange : 641
+bowl : 534
+person : 504
+banana : 504
+dining table : 433
+bottle : 256
+cup : 237
+chair : 210
+knife : 205
+spoon : 154
+
+Attribute : sandwich
+dining table : 1341
+person : 983
+cup : 965
+bowl : 730
+fork : 630
+knife : 573
+spoon : 477
+bottle : 467
+chair : 375
+hot dog : 299
+
+Attribute : orange
+apple : 641
+bowl : 620
+dining table : 488
+person : 483
+banana : 477
+bottle : 289
+cup : 277
+chair : 214
+knife : 161
+carrot : 150
+
+Attribute : broccoli
+dining table : 738
+bowl : 725
+carrot : 623
+fork : 325
+person : 273
+cup : 269
+spoon : 259
+knife : 230
+bottle : 164
+sandwich : 127
+
+Attribute : carrot
+bowl : 720
+dining table : 663
+broccoli : 623
+person : 366
+fork : 345
+spoon : 343
+cup : 321
+knife : 314
+bottle : 208
+sandwich : 162
+
+Attribute : hot dog
+person : 692
+dining table : 456
+sandwich : 299
+cup : 297
+bottle : 214
+bowl : 181
+chair : 175
+fork : 110
+spoon : 85
+knife : 76
+
+Attribute : pizza
+dining table : 1707
+person : 1599
+cup : 1007
+knife : 813
+fork : 755
+bottle : 662
+chair : 640
+bowl : 512
+wine glass : 285
+spoon : 268
+
+Attribute : donut
+person : 835
+dining table : 525
+cup : 405
+chair : 221
+cake : 179
+bowl : 176
+bottle : 142
+spoon : 112
+knife : 86
+fork : 83
+
+Attribute : cake
+dining table : 1709
+person : 1578
+knife : 901
+cup : 824
+fork : 709
+chair : 692
+bowl : 614
+spoon : 527
+bottle : 419
+wine glass : 243
+
+Attribute : chair
+person : 8034
+dining table : 5123
+cup : 2947
+bottle : 2381
+couch : 2146
+book : 2108
+tv : 1990
+bowl : 1783
+potted plant : 1719
+laptop : 1368
+
+Attribute : couch
+person : 2236
+chair : 2146
+remote : 1447
+book : 1363
+tv : 1271
+dining table : 1032
+potted plant : 933
+vase : 781
+cup : 720
+bottle : 588
+
+Attribute : potted plant
+person : 1962
+chair : 1719
+vase : 1373
+dining table : 1191
+couch : 933
+cup : 786
+bottle : 765
+book : 735
+tv : 636
+bowl : 636
+
+Attribute : bed
+person : 1278
+chair : 823
+book : 756
+cat : 542
+tv : 419
+laptop : 404
+dog : 355
+teddy bear : 342
+couch : 324
+bottle : 288
+
+Attribute : dining table
+person : 5868
+chair : 5123
+cup : 4679
+bowl : 3395
+bottle : 2865
+knife : 2736
+fork : 2688
+spoon : 2091
+cake : 1709
+pizza : 1707
+
+Attribute : toilet
+sink : 1677
+bottle : 531
+person : 407
+cup : 210
+toothbrush : 198
+cat : 153
+potted plant : 140
+vase : 113
+book : 85
+chair : 81
+
+Attribute : tv
+chair : 1990
+person : 1938
+book : 1471
+couch : 1271
+keyboard : 1252
+remote : 1126
+mouse : 1066
+laptop : 1016
+cup : 856
+dining table : 755
+
+Attribute : laptop
+person : 1754
+chair : 1368
+mouse : 1067
+book : 1041
+tv : 1016
+keyboard : 967
+cup : 864
+cell phone : 721
+couch : 582
+dining table : 567
+
+Attribute : mouse
+keyboard : 1285
+laptop : 1067
+tv : 1066
+chair : 707
+book : 691
+cup : 496
+person : 474
+cell phone : 436
+bottle : 273
+remote : 218
+
+Attribute : remote
+person : 2058
+couch : 1447
+tv : 1126
+chair : 1108
+book : 845
+cup : 488
+dining table : 433
+bottle : 420
+laptop : 374
+potted plant : 366
+
+Attribute : keyboard
+mouse : 1285
+tv : 1252
+laptop : 967
+chair : 694
+book : 672
+person : 597
+cup : 520
+cell phone : 428
+bottle : 279
+remote : 242
+
+Attribute : cell phone
+person : 3829
+chair : 952
+handbag : 910
+cup : 833
+dining table : 745
+laptop : 721
+bottle : 620
+book : 590
+tv : 486
+backpack : 480
+
+Attribute : microwave
+oven : 903
+refrigerator : 682
+sink : 668
+bottle : 600
+bowl : 528
+person : 483
+cup : 476
+chair : 435
+dining table : 383
+knife : 276
+
+Attribute : oven
+sink : 1168
+bottle : 1128
+bowl : 1098
+person : 1028
+refrigerator : 1023
+microwave : 903
+cup : 805
+chair : 616
+spoon : 614
+dining table : 606
+
+Attribute : toaster
+oven : 124
+sink : 116
+bottle : 115
+microwave : 97
+bowl : 94
+cup : 81
+refrigerator : 78
+dining table : 63
+chair : 61
+knife : 59
+
+Attribute : sink
+bottle : 1774
+toilet : 1677
+oven : 1168
+cup : 1113
+person : 1014
+bowl : 992
+refrigerator : 807
+microwave : 668
+chair : 634
+dining table : 510
+
+Attribute : refrigerator
+oven : 1023
+bottle : 993
+person : 873
+sink : 807
+bowl : 706
+chair : 698
+microwave : 682
+cup : 597
+dining table : 572
+knife : 289
+
+Attribute : book
+person : 2278
+chair : 2108
+tv : 1471
+couch : 1363
+cup : 1107
+dining table : 1068
+laptop : 1041
+bottle : 929
+remote : 845
+bed : 756
+
+Attribute : clock
+person : 1905
+chair : 767
+car : 499
+book : 465
+dining table : 427
+bottle : 427
+cup : 378
+potted plant : 354
+couch : 345
+tv : 337
+
+Attribute : vase
+potted plant : 1373
+chair : 1289
+dining table : 1104
+person : 839
+couch : 781
+cup : 764
+bottle : 685
+book : 679
+bowl : 643
+tv : 457
+
+Attribute : scissors
+person : 390
+cup : 168
+bottle : 161
+book : 142
+chair : 136
+dining table : 132
+bowl : 116
+knife : 99
+tv : 79
+laptop : 78
+
+Attribute : teddy bear
+person : 856
+bed : 342
+chair : 329
+book : 271
+couch : 212
+dining table : 138
+cup : 132
+bottle : 130
+tv : 120
+potted plant : 100
+
+Attribute : hair drier
+person : 98
+sink : 98
+toilet : 44
+bottle : 44
+cup : 30
+chair : 22
+toothbrush : 21
+book : 11
+bowl : 11
+couch : 10
+
+Attribute : toothbrush
+person : 540
+sink : 427
+bottle : 276
+toilet : 198
+cup : 195
+book : 52
+chair : 50
+potted plant : 43
+cat : 42
+bowl : 41

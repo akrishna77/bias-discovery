@@ -1,0 +1,17 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+
+<div class="container">
+    <p>UDIS is an unsupervised approach to preemptively detect model biases by exploring dataset subpopulations where model performance varies. </p>
+    <h3> Instructions: </h3>
+    <ol>
+        <li>Upload model.</li>
+        <li>Generate cluster tree JSON using run_discover.sh.</li>
+        <li>Upload JSON.</li>
+        <li>Use your selected model and JSON file to view potentially biased clusters.</li>
+    </ol>
+</div>
+
+{% endblock %}

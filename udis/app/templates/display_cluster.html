@@ -1,0 +1,9 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <img class="img-responsive" src=" {{url_for('send_image', filename=image_name)}}">
+</div>
+
+{% endblock %}

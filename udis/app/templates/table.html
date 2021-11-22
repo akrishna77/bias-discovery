@@ -1,0 +1,177 @@
+{% extends "_base.html" %}
+
+{% block style %}
+
+<style type='text/css'>
+    .row-index {
+      width: 50px;
+      display: inline-block;
+    }
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container" style="padding: 10px; ">
+<h1>{{title}}</h1>
+<br/>
+<div id="toolbar"></div>
+<table
+    id="table"
+    data-toggle="true"
+    data-toolbar="#toolbar"
+    data-search="true"
+    data-show-columns="true"
+    data-pagination="false"
+    data-height="500">
+</table>
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+<script type='text/javascript'>
+    $(window).load(function(){
+
+        var data = {{data|tojson}};
+        var columns = {{columns|tojson}};
+        var dataset = {{dataset|tojson}};
+        var model = {{model|tojson}};
+        var tree = {{tree|tojson}};
+        var gc = {{gradcam|tojson}};
+
+        columns.push({
+            field: 'operate',
+            title: 'Plot',
+            align: 'center',
+            valign: 'middle',
+            sortable: false,
+            clickToSelect: false,
+            formatter : function(value,row,index) {
+                return '<button class=\'btn btn-primary btn-plot \' cluster="' + row.name + '" >Plot</button> ';
+            }
+        })
+
+        if(dataset=="CelebA") {
+            columns.push({
+                field: 'operate',
+                title: 'Plot NN',
+                align: 'center',
+                valign: 'middle',
+                sortable: false,
+                clickToSelect: false,
+                formatter : function(value,row,index) {
+                    return '<button class=\'btn btn-primary btn-plot-NN \' cluster="' + row.name + '" >Plot NN</button> ';
+                }
+            })
+
+            columns.push({
+                field: 'operate',
+                title: 'Plot Dist NN',
+                align: 'center',
+                valign: 'middle',
+                sortable: false,
+                clickToSelect: false,
+                formatter : function(value,row,index) {
+                    return '<button class=\'btn btn-primary btn-plot-distNN \' cluster="' + row.name + '" >Plot Dist NN</button> ';
+                }
+            })
+        }
+                
+        $(function() {
+            $('#table').bootstrapTable({ 
+                data: data,
+                columns: columns,
+            });
+
+            $(".btn-plot").click(function(e){
+                e.preventDefault()
+
+                alert("Plotting..");
+
+                var cluster = $(this).attr('cluster');
+
+                let xhr = new XMLHttpRequest();
+                var formData = new FormData();
+                formData.append("cluster-id", cluster);
+                formData.append("dataset-select", dataset);
+                formData.append("model-name", model);
+                formData.append("gradcam-class", gc);
+                formData.append("json-name", tree);
+
+                xhr.open("POST", '/plot_cluster', true);
+                xhr.onreadystatechange = function() {
+                    if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+                        var w = window.open('/display_cluster', target='_blank');
+                        w.addEventListener("load", function() {
+                            w.document.title = cluster;
+                        });
+                    }
+                }
+                xhr.send(formData);
+                return false;
+            });
+
+            $(".btn-plot-distNN").click(function(e){
+                e.preventDefault()
+
+                alert("Plotting dist NN..");
+
+                var cluster = $(this).attr('cluster');
+
+                let xhr = new XMLHttpRequest();
+                var formData = new FormData();
+                formData.append("cluster-id", cluster);
+                formData.append("dataset-select", dataset);
+                formData.append("model-name", model);
+                formData.append("gradcam-class", gc);
+                formData.append("json-name", tree);
+
+                xhr.open("POST", '/plot_dist_nn', true);
+                xhr.onreadystatechange = function() {
+                    if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+                        var w = window.open('/display_cluster', target='_blank');
+                        w.addEventListener("load", function() {
+                            w.document.title = cluster;
+                        });
+                    }
+                }
+                xhr.send(formData);
+                return false;
+            });
+
+            $(".btn-plot-NN").click(function(e){
+                e.preventDefault()
+
+                alert("Plotting NN..");
+
+                var cluster = $(this).attr('cluster');
+
+                let xhr = new XMLHttpRequest();
+                var formData = new FormData();
+                formData.append("cluster-id", cluster);
+                formData.append("dataset-select", dataset);
+                formData.append("model-name", model);
+                formData.append("gradcam-class", gc);
+                formData.append("json-name", tree);
+
+                xhr.open("POST", '/plot_nn', true);
+                xhr.onreadystatechange = function() {
+                    if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+                        var w = window.open('/display_cluster', target='_blank');
+                        w.addEventListener("load", function() {
+                            w.document.title = cluster;
+                        });
+                    }
+                }
+                xhr.send(formData);
+                return false;
+            });
+        });
+    });
+
+</script>
+
+{% endblock %}

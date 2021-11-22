@@ -1,0 +1,79 @@
+{% extends "_base.html" %}
+
+{% block content %}
+  
+<div class="container">
+    <form action="{{ url_for('details') }}" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="dataset-select">Dataset:</label>
+            <select class="form-control" id="dataset-select" name="dataset-select" onchange="addGC(this);addMA(this);">
+              <option value="CelebA">CelebA</option>
+              <option value="COCO">COCO</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="model-name">Model name:</label>
+            <select class="form-control" id="model-name" name="model-name">
+              <option>biased_black_hair_model_92.pth</option>
+              <option>original_celeba_model_93.pth</option>
+              <option>coco.pth</option>
+            </select>
+          </div>
+
+        <div id="thresh-div" class="form-group" style="display: block;">
+            <label for="threshold">Threshold Hyperparameter:</label>
+            <input type="text" class="form-control" id="threshold" placeholder="0.66" name="threshold">
+        </div>
+
+        <div id="acc-div" class="form-group" style="display: block;">
+            <label for="model-accuracy">Model Accuracy:</label>
+            <input type="text" class="form-control" id="model-accuracy" name="model-accuracy">
+        </div>
+        
+        <div id="gc-div" class="form-group" style="display: none;">
+            <label for="gradcam-category">GradCAM Category:</label>
+            <input type="text" class="form-control" id="gradcam-category" name="gradcam-category">
+        </div>
+
+        <div class="form-group">
+            <label for="json-name">JSON name:</label>
+            <select class="form-control" id="json-name" name="json-name">
+                <option>black_hair_fc_92.json</option>
+                <option>original_fc_93.json</option>
+                <option>bed_fc_58.json</option>
+                <option>bench_fc_74.json</option>
+                <option>bowl_fc_75.json</option>
+                <option>cup_fc_66.json</option>
+                <option>person_fc_93.json</option>
+                <option>spoon_fc_50.json</option>
+
+            </select>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" id="upload-button"> Upload </button>
+      </form>
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+<script type='text/javascript'>
+    function addGC(dataset) {
+        if (dataset.value == "COCO") {
+            document.getElementById("gc-div").style.display = "block";
+        } else {
+            document.getElementById("gc-div").style.display = "none";
+        }
+    }
+
+    // function addMA(dataset) {
+    //     if (dataset.value == "COCO") {
+    //         document.getElementById("acc-div").style.display = "none";
+    //     } else {
+    //         document.getElementById("acc-div").style.display = "block";
+    //     }
+    // }
+</script>
+
+{% endblock %}
